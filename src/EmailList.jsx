@@ -14,6 +14,7 @@ import { Checkbox, IconButton } from "@mui/material";
 import "./EmailList.css";
 import EmailRow from "./EmailRow";
 import Section from "./Section";
+
 const EmailList = () => {
   return (
     <div className="email-list">

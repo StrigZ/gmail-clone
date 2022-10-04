@@ -1,6 +1,7 @@
 .email-list {
   flex: 1;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .email-list__settings {
