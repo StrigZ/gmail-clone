@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, signInWithPopup } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { login } from "./features/userSlice";
 import { provider } from "./firebase";
@@ -11,8 +11,6 @@ const Login = () => {
     const auth = getAuth();
     signInWithPopup(auth, provider)
       .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
         const user = result.user;
         dispatch(
           login({

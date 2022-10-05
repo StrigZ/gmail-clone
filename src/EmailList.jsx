@@ -11,13 +11,7 @@ import {
   Settings,
 } from "@mui/icons-material";
 import { Checkbox, IconButton } from "@mui/material";
-import {
-  collection,
-  getDoc,
-  onSnapshot,
-  orderBy,
-  query,
-} from "firebase/firestore";
+import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import "./EmailList.css";
 import EmailRow from "./EmailRow";
