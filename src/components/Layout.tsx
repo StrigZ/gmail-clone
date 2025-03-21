@@ -1,15 +1,16 @@
 import type { ReactNode } from 'react';
 
+import EmailList from './EmailList';
 import Header from './Header/Header';
 import Sidebar from './Sidebar';
 
 type Props = { children: ReactNode };
 export default function Layout({ children }: Props) {
   return (
-    <main className="container mx-auto grid grid-cols-[250px,1fr] py-2">
+    <main className="grid w-screen grid-cols-[min-content,1fr] grid-rows-[64px,1fr] bg-green-300">
+      <Header className="col-span-full" />
       <Sidebar />
-      <Header />
-      {/* Sidebar */}
+      <EmailList />
       {/* SettingsSidebar */}
       {/* EmailList or  */} {children}
     </main>
