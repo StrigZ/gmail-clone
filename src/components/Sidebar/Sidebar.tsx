@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { cn } from '~/lib/utils';
 
-import ComposeButton from './ComposeButton';
+import EmailFormWrapper from './EmailFormWrapper';
 import MenuButton from './MenuButton';
 import SidebarMenu from './SidebarMenu';
 
@@ -28,7 +28,7 @@ export default function Sidebar({ className }: Props) {
       <MenuButton handleSidebarOpen={handleSidebarOpen} />
 
       <div className="px-2">
-        <ComposeButton isSidebarOpen={isSidebarOpen} />
+        <EmailFormWrapper isSidebarOpen={isSidebarOpen} />
       </div>
 
       <SidebarMenu isSidebarOpen={isSidebarOpen} />
