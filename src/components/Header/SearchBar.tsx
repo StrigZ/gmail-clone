@@ -10,7 +10,7 @@ export default function SearchBar({ className }: Props) {
   return (
     <div
       className={cn(
-        'flex items-center rounded-full border border-input bg-transparent px-3 py-1 shadow-sm transition-colors focus-within:bg-background focus-within:outline-none focus-within:ring-1 focus-within:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
+        'flex items-center rounded-full bg-background/25 px-3 py-1 shadow-sm transition-colors focus-within:bg-background focus-within:outline-none disabled:cursor-not-allowed disabled:opacity-50',
         className,
       )}
     >
