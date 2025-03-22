@@ -1,6 +1,5 @@
 import { type ReactNode } from 'react';
 
-import EmailList from './EmailList';
 import Header from './Header/Header';
 import Sidebar from './Sidebar/Sidebar';
 
@@ -11,9 +10,7 @@ export default function Layout({ children }: Props) {
       <Header className="" />
       <div className="flex flex-1">
         <Sidebar />
-        <EmailList className="flex-1" />
-        {/* SettingsSidebar */}
-        {/* EmailList or  */} {children}
+        {children}
       </div>
     </main>
   );
