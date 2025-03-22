@@ -38,7 +38,7 @@ export default function Sidebar({}: Props) {
 
   return (
     <SidebarContainer
-      className="flex items-center gap-2 border-none bg-transparent"
+      className="flex items-center gap-2 border-none bg-transparent pb-4"
       collapsible="icon"
     >
       <SidebarContent>
